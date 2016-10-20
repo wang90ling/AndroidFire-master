@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include layout="@layout/app_head_title"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="left"
+                android:lineSpacingMultiplier="1.2"
+                android:maxLines="3"
+                android:padding="10dp"
+                android:text="描述：在Android项目中，会遇到消息推送(Notification)的需求，那么下面的一个Demo实例，就是一个基于Android消息推送的实例"
+                android:textColor="@color/gray_999999"
+                android:textSize="13sp"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="left"
+                android:lineSpacingMultiplier="1.2"
+                android:maxLines="3"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="博客地址：http://blog.csdn.net/w804518214/article/details/51231946"
+                android:textColor="@color/gray_999999"
+                android:textSize="13sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="left"
+                android:lineSpacingMultiplier="1.2"
+                android:maxLines="3"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="项目地址：http://download.csdn.net/detail/w804518214/9500651"
+                android:textColor="@color/gray_999999"
+                android:textSize="13sp"/>
+
+
+            <TextView
+                android:id="@+id/tv_notification1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bt_bg_select"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="普通通知"
+                android:textColor="@color/white"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/tv_notification2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bt_bg_select"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="带下载的通知"
+                android:textColor="@color/white"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/tv_notification3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bt_bg_select"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="BigTextStyle"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/tv_notification4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bt_bg_select"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="InboxStyle"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/tv_notification5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bt_bg_select"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="BigPictureStyle"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/tv_notification6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bt_bg_select"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="HangUp 横幅通知"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/tv_notification7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bt_bg_select"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="MediaStyle"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/tv_notification8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bt_bg_select"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="自定义View"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="15sp"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

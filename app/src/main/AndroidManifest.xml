@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jaydenxiao.androidfire">
+
+    <!-- 基础模块（必须加入以下声明）START -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 基础模块 END -->
+
+    <application
+        android:name=".app.AppApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".ui.main.activity.WelcomeActivity"
+            android:theme="@style/WelcomeTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ui.news.activity.PhotosDetailActivity"
+            android:theme="@style/BaseAppTheme.Trans" />
+        <activity android:name=".ui.main.activity.GuideActivity"></activity>
+
+        <activity
+            android:name=".base.SubActivity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustPan" />
+        <activity android:name=".ui.main.activity.MainActivity" />
+        <activity android:name=".ui.news.activity.NewsDetailActivity" />
+        <activity android:name=".ui.news.activity.NewsBrowserActivity" />
+        <activity android:name=".ui.news.activity.NewsPhotoDetailActivity" />
+        <activity android:name=".ui.news.activity.NewsChannelActivity" />
+        <activity android:name=".ui.zone.activity.CircleZoneActivity" />
+        <activity android:name=".ui.zone.activity.CirclePublishActivity" />
+        <activity android:name=".ui.news.activity.AboutActivity" />
+
+        <!-- 友盟统计 -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="57e8e398e0f55ae655000723"></meta-data>
+
+        <activity android:name="com.jaydenxiao.androidfire.ui.resource.notification.SettingsActivity">
+        </activity>
+
+        <service
+            android:name="com.jaydenxiao.androidfire.ui.resource.notification.DownloadService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name="com.jaydenxiao.androidfire.ui.resource.notification.ImageActivity"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"></activity>
+
+        <service
+            android:name="com.jaydenxiao.androidfire.ui.resource.notification.MediaService"
+            android:enabled="true"
+            android:exported="false"></service>
+    </application>
+
+</manifest>
