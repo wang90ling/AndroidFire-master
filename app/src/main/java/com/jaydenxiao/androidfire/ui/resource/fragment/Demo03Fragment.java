@@ -50,7 +50,7 @@ public class Demo03Fragment extends BaseFragment {
 
     @OnClick(R.id.tv_check_version_update)
     public void checkVersionUpdate(){
-        System.out.println("检测版本更新bbbbbbaaaaa");
+        System.out.println("检测版本更新bbbbbbaaaaacccccc");
         Toast.makeText(getContext(),"检测版本更新",Toast.LENGTH_SHORT).show();
     }
 
